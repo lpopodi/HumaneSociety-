@@ -59,6 +59,7 @@
       <DependentUpon>HsdbLinqToSql.dbml</DependentUpon>
     </Compile>
     <Compile Include="IEdit.cs" />
+    <Compile Include="Import.cs" />
     <Compile Include="ISearch.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="Program.cs" />
@@ -68,6 +69,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Register.cs" />
     <Compile Include="Search.cs" />
   </ItemGroup>
   <ItemGroup>

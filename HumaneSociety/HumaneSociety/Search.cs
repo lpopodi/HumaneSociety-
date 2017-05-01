@@ -83,8 +83,8 @@ namespace HumaneSociety
             {
                 Console.WriteLine("! No Matches Found. !\n\n");
             }
-            
-            GetOptionToEdit()
+
+            GetOptionToEdit();
         }
 
         public void GetOptionToEdit()

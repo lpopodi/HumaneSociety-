@@ -9,19 +9,52 @@ namespace HumaneSociety
     public class Edit : IEdit
     {
 
-        public void EditAnimalType()
+        public void EditAnimalType(string animToEdit)
         {
-            throw new NotImplementedException();
+            using (HsdbLinqToSqlDataContext editTypeObj = new HsdbLinqToSqlDataContext())
+            {
+                Animal animal = new Animal();
+                
+                if (animal.AnimalType == animToEdit)
+                {
+                    Console.WriteLine("Please enter Animal Type Value to be updated.");
+                    animal.AnimalType = Console.ReadLine();
+                }
+
+                editTypeObj.SubmitChanges();
+            }
         }
 
-        public void EditFood()
+        public void EditFood(string animToEdit)
         {
-            throw new NotImplementedException();
+            using (HsdbLinqToSqlDataContext editFoodObj = new HsdbLinqToSqlDataContext())
+            {
+                Animal animal = new Animal();
+
+                if (animal.Food == animToEdit)
+                {
+                    Console.WriteLine("Please enter Animal Type Value to be updated.");
+                    animal.Food = Console.ReadLine();
+                }
+
+                editFoodObj.SubmitChanges();
+            }
         }
 
-        public void EditShot()
+        public void EditShot(string animToEdit)
         {
-            throw new NotImplementedException();
+            using (HsdbLinqToSqlDataContext editShotObj = new HsdbLinqToSqlDataContext())
+            {
+                Animal animal = new Animal();
+
+                if (animal.Shot == animToEdit)
+                {
+                    Console.WriteLine("Please enter Animal Type Value to be updated.");
+                    animal.Shot = Console.ReadLine();
+                }
+
+                editShotObj.SubmitChanges();
+            }
         }
     }
 }

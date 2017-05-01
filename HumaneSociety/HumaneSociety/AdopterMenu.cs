@@ -28,10 +28,11 @@ namespace HumaneSociety
                 case "REGISTER":
                     Console.WriteLine("You have chosen to register for an account .. Thank You!\nPress any key to continue");
                     Console.ReadKey();
+                    Register register = new Register();
                     break;
                 case "2":
                 case "LOG IN":
-                    Console.WriteLine("You have chosen to Log In, press any key to continue to login");
+                    Console.WriteLine("You have chosen to Log In, I'm sorry we have not added that capability yet");
                     Console.ReadKey();
                     break;
                 case "3":

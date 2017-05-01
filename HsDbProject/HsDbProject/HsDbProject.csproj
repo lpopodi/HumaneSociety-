@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AddAnimal.cs" />
     <Compile Include="Animal.cs" />
+    <Compile Include="DbSaver.cs" />
     <Compile Include="IEdit.cs" />
     <Compile Include="ISearch.cs" />
     <Compile Include="MainMenu.cs" />

@@ -1,42 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HumaneSocietyDB" Class="HsdbLinqToSqlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=LISA-LAPTOP;Initial Catalog=HumaneSocietyDB;Integrated Security=True" SettingsObjectName="HumaneSociety.Properties.Settings" SettingsPropertyName="HumaneSocietyDBConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Animal" Member="Animals">
-    <Type Name="Animal">
-      <Column Name="AnimalID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="Gender" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="Room" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="Food" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="AnimalType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Association Name="Animal_Food" Member="Foods" ThisKey="AnimalID" OtherKey="AnimalID" Type="Food" />
-      <Association Name="Animal_Shot" Member="Shots" ThisKey="AnimalID" OtherKey="AnimalID" Type="Shot" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Food" Member="Foods">
-    <Type Name="Food">
-      <Column Name="FoodID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Quantity" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="AnimalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Animal_Food" Member="Animal" ThisKey="AnimalID" OtherKey="AnimalID" Type="Animal" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Shot" Member="Shots">
-    <Type Name="Shot">
-      <Column Name="ShotID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="AnimalID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Animal_Shot" Member="Animal" ThisKey="AnimalID" OtherKey="AnimalID" Type="Animal" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.Adopter" Member="Adopters">
     <Type Name="Adopter">
       <Column Name="PersonID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="LastName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="FirstName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="Address" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="City" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="State" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="Zip" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="Phone" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="P_FirstName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="P_LastName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="P_Address" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="P_City" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="P_State" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="P_Zip" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="P_Phone" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Animal" Member="Animals">
+    <Type Name="Animal">
+      <Column Name="Room" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="AnimalType" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Food" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Shot" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(20,0)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

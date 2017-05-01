@@ -13,5 +13,11 @@ namespace HumaneSociety
         void SearchASpecificAnimal();
 
         void SearchAdoperByName();
+
+        void SearchByGender();
+
+        void SearchByType();
+
+        void SearchByBoth();
     }
 }

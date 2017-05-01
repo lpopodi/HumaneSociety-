@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HSDataClass">
+  <DataContextMoniker Name="/HSDataClassDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fd80db5f-bde0-45b8-ba90-6cf771a05874" absoluteBounds="0.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/HSDataClassDataContext/Adopter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2393333e-3232-4f57-8a51-367a12d2c41d" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b94c8e8e-e8c9-482b-8849-99cc474eeca9" absoluteBounds="6, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HSDataClassDataContext/Animal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="059fa550-efa3-4bb2-bb17-9e98da7f07b8" absoluteBounds="6.015, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de7aeb89-f322-4ecf-9245-6c56fb6fdb4b" absoluteBounds="3.625, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/HSDataClassDataContext/Food" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dcde4d07-ce51-4d93-a2ff-98562d0956fd" absoluteBounds="3.6399999999999997, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 1.31814697265625); (5.625 : 1.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HSDataClassDataContext/Animal/Animal_Food" />
+      <nodes>
+        <classShapeMoniker Id="b94c8e8e-e8c9-482b-8849-99cc474eeca9" />
+        <classShapeMoniker Id="de7aeb89-f322-4ecf-9245-6c56fb6fdb4b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1b8b6d11-c8ce-4b37-a8a4-51fbebee1ab6" absoluteBounds="3.625, 2.25, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/HSDataClassDataContext/Shot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c91d147-704a-4c8f-a4ee-3ea8d1df4fe5" absoluteBounds="3.6399999999999997, 2.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 2.57774983723958); (5.625 : 2.57774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HSDataClassDataContext/Animal/Animal_Shot" />
+      <nodes>
+        <classShapeMoniker Id="b94c8e8e-e8c9-482b-8849-99cc474eeca9" />
+        <classShapeMoniker Id="1b8b6d11-c8ce-4b37-a8a4-51fbebee1ab6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

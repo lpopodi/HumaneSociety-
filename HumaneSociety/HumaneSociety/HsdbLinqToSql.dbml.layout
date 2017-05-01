@@ -2,42 +2,16 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HsdbLinqToSql">
   <DataContextMoniker Name="/HsdbLinqToSqlDataContext" />
   <nestedChildShapes>
-    <classShape Id="cdd3eea1-7306-4968-8213-4e13166cf466" absoluteBounds="0.5, 0.875, 2, 1.9631982421875">
-      <DataClassMoniker Name="/HsdbLinqToSqlDataContext/Animal" />
-      <nestedChildShapes>
-        <elementListCompartment Id="316110d1-8f08-427d-93fb-10ef3e4f9263" absoluteBounds="0.51499999999999968, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="e89a7c7f-18b2-4367-98a1-e0607d307ada" absoluteBounds="3, 2, 2, 1.3862939453125">
-      <DataClassMoniker Name="/HsdbLinqToSqlDataContext/Food" />
-      <nestedChildShapes>
-        <elementListCompartment Id="083de860-9af3-4546-b7bb-e56d4b5b3429" absoluteBounds="3.0149999999999997, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(2.5 : 2.41909912109375); (3 : 2.41909912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/HsdbLinqToSqlDataContext/Animal/Animal_Food" />
-      <nodes>
-        <classShapeMoniker Id="cdd3eea1-7306-4968-8213-4e13166cf466" />
-        <classShapeMoniker Id="e89a7c7f-18b2-4367-98a1-e0607d307ada" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="8afe36d1-aa0d-4427-851a-ceabfbd95848" absoluteBounds="3, 0.5, 2, 1.1939925130208333">
-      <DataClassMoniker Name="/HsdbLinqToSqlDataContext/Shot" />
-      <nestedChildShapes>
-        <elementListCompartment Id="ebbb0a72-ad52-4c92-b62c-116ad6b02f82" absoluteBounds="3.0149999999999997, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(2.5 : 1.28449625651042); (3 : 1.28449625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/HsdbLinqToSqlDataContext/Animal/Animal_Shot" />
-      <nodes>
-        <classShapeMoniker Id="cdd3eea1-7306-4968-8213-4e13166cf466" />
-        <classShapeMoniker Id="8afe36d1-aa0d-4427-851a-ceabfbd95848" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="b7253724-fcfa-4da8-9a63-e4303e0e366a" absoluteBounds="5.875, 0.75, 2, 2.3478011067708335">
+    <classShape Id="42ecba58-5e76-4138-8558-e738cad7ff3a" absoluteBounds="1.5, 0.75, 2, 2.3478011067708335">
       <DataClassMoniker Name="/HsdbLinqToSqlDataContext/Adopter" />
       <nestedChildShapes>
-        <elementListCompartment Id="4cad91df-017d-4f53-87ca-862c01e9193a" absoluteBounds="5.89, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="3fb51008-dea0-467b-a7b7-d26148720c52" absoluteBounds="1.5149999999999997, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c035584-d0dc-4c1a-953d-ca0a9056657f" absoluteBounds="4.875, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HsdbLinqToSqlDataContext/Animal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd71f551-7883-4c07-9fbb-5b10b78f9b6f" absoluteBounds="4.89, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

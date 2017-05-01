@@ -8,5 +8,20 @@ namespace HumaneSociety
 {
     public class AdoptAnimal
     {
+        public AdoptAnimal()
+        {
+
+        }
+
+        public void CollectPayment()
+        {
+
+        }
+
+        public void DeleteAnimalFromTable()
+        {
+
+        }
+
     }
 }

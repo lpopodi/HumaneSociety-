@@ -8,15 +8,6 @@ namespace HumaneSociety
 {
     public class Edit : IEdit
     {
-        public void AddFood()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void AddShotRecord()
-        {
-            throw new NotImplementedException();
-        }
 
         public void EditAnimalType()
         {
@@ -28,7 +19,7 @@ namespace HumaneSociety
             throw new NotImplementedException();
         }
 
-        public void EditRoom()
+        public void EditShot()
         {
             throw new NotImplementedException();
         }

@@ -8,15 +8,12 @@ namespace HumaneSociety
 {
     public interface IEdit
     {
-        void AddFood();
 
-        void AddShotRecord();
+        void EditAnimalType(string animToEdit);
 
-        void EditAnimalType();
+        void EditFood(string animToEdit);
 
-        void EditFood();
-
-        void EditRoom();
+        void EditShot(string animToEdit);
 
 
     }

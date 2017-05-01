@@ -28,6 +28,7 @@ namespace HumaneSociety
                 case "ADD":
                     Console.WriteLine("You have selected to add a single animal, press any key to continue");
                     Console.ReadKey();
+                    AddAnimalData newAnimal = new AddAnimalData();
                     break;
                 case "2":
                 case "IMPORT":
